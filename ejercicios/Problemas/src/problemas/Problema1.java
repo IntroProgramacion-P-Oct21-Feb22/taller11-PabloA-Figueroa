@@ -18,9 +18,15 @@ public class Problema1 {
         int[][] informacion = {{1, 2, 3}, {10, 20, 30}, {100, 200, 300}};
         imprimirDatos(informacion);
     }
-    
-    public static void imprimirDatos(int[][] datos){
-    
+
+    public static void imprimirDatos(int[][] datos) {
+        String cadena = "";
+        for (int fila = 0; fila < datos.length; fila++) {
+            for (int col = 0; col < datos.length; col++) {
+                cadena = String.format("%s%d\n",cadena,datos[fila][col]);
+            }
+        } 
+        System.out.println(cadena);
     }
-    
+
 }
